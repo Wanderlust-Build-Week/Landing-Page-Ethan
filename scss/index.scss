@@ -1,0 +1,32 @@
+.logo {
+    width: auto;
+    height:10rem;
+    border:1px black solid;
+}
+
+.navBar {
+    border:1px black solid;
+    display: flex;
+    width: 15em;
+    justify-content: space-around;
+    align-items: center;
+    a {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color:black;
+        text-decoration: none;
+        display: flex;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    background-color: white;
+}
+
+body{
+    background-color:red;
+    border:black 1px solid
+}
