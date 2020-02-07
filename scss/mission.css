@@ -99,6 +99,35 @@ html, body {
   background-color: rgba(85, 80, 80, 0.76);
 }
 
+@media only screen and (max-width: 500px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .header .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 1rem 0;
+  }
+  .header .navBar a {
+    font-size: 1.5rem;
+  }
+  .logo {
+    margin: 0;
+  }
+}
+
 body {
   z-index: 2;
 }
@@ -233,5 +262,53 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainContent .info-box-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContent .info-box-top p {
+    margin: 0 0 1rem 0;
+  }
+  .mainContent .info-box-top img {
+    margin: 0;
+  }
+  .info-box-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info-box-bottom .call-ta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info-box-bottom .call-ta p {
+    margin: 1rem 0 1rem 0;
+  }
 }
 /*# sourceMappingURL=mission.css.map */

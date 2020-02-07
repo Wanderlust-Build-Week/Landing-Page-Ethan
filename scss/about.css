@@ -99,6 +99,35 @@ html, body {
   background-color: rgba(85, 80, 80, 0.76);
 }
 
+@media only screen and (max-width: 500px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .header .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 1rem 0;
+  }
+  .header .navBar a {
+    font-size: 1.5rem;
+  }
+  .logo {
+    margin: 0;
+  }
+}
+
 body {
   z-index: 2;
 }
@@ -162,7 +191,21 @@ body {
   border-radius: 35px;
 }
 
-.aboutContainer .profiles {
+.aboutContainer .box {
+  width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profiles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,24 +220,20 @@ body {
   background-color: rgba(0, 0, 0, 0.514);
 }
 
-.aboutContainer .profiles p {
+.profiles p {
   margin-top: .6rem;
   margin-bottom: 3rem;
   font-size: 1.5rem;
   color: white;
 }
 
-.aboutContainer .box {
-  width: 190px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media only screen and (max-width: 500px) {
+  .profiles {
+    width: 75%;
+    padding-top: 2rem;
+  }
+  .profiles .box {
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=about.css.map */

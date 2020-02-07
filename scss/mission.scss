@@ -1,36 +1,6 @@
 @import "reset";
-
-.logo {
-    width: auto;
-    height:10rem;
-    margin-left: 4rem;
-}
-
-.navBar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top:3.5rem;
-    margin-right:1rem;
-    a {
-        margin-left: 1.1rem;
-        margin-right: 1.1rem;
-        margin-top: .6rem;
-        text-decoration: none;
-        color:white;
-        display: flex;
-        font-size: 1rem;
-    }
-}
-
-.header {
-    height:11rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(85, 80, 80, 0.76);
-
-}
+@import "variables";
+@import "header";
 
 body {
     z-index: 2;
@@ -127,4 +97,33 @@ body {
         justify-content: space-between;
         align-items: center;
     }
+}
+
+@media #{$mobile} {
+    .mainContent {
+        .info-box-top{
+            display: flex;
+            flex-direction: column;
+                p{
+                    margin:0 0 1rem 0;
+                }
+                img{
+                    margin:0;
+                }
+        }
+    }
+        .info-box-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                .call-ta{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        margin:1rem 0 1rem 0;
+                    }
+                }
+        }
 }
