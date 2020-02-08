@@ -1,6 +1,7 @@
 @import "reset";
 @import "variables";
 @import "header";
+@import "mixins";
 
 body {
     z-index: 2;
@@ -31,7 +32,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: rgba(255, 255, 255, 0.781);
     margin: 4rem 60px 0 60px;
     padding: 40px 40px 40px 40px;
     font-size: 1.2rem;
@@ -73,15 +74,7 @@ body {
         margin:20px 0px 0 0px;
     }
     .button{
-        color:rgb(255, 255, 255);
-        background: #3878b3;
-        border-radius: .4rem;
-        padding:.6rem;
-        border: none;
-        font-size: 1rem;
-        width: 160px;
-        margin-bottom:40px;
-        text-decoration: none;
+        @include btn-style;
        }
 }
 

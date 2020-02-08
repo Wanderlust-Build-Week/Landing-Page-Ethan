@@ -166,7 +166,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
+  color: rgba(255, 255, 255, 0.781);
   margin: 4rem 60px 0 60px;
   padding: 40px 40px 40px 40px;
   font-size: 1.2rem;
